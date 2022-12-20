@@ -19,8 +19,8 @@ docker run \
     --shm-size 8g \
     -v "${HOME}/.netrc":/root/.netrc \
     -v "${CWD}/..":/workspace \
-    -v "/mnt/scratch/${USER}":/workspace/.mnt/scratch \
-    -v "/mnt/persist/${USER}":/workspace/.mnt/persist \
+    -v "/mnt/scratch/${USER}/${PROJECT_NAME}":/workspace/.mnt/scratch \
+    -v "/mnt/persist/${USER}/${PROJECT_NAME}":/workspace/.mnt/persist \
     -e CUDA_VISIBLE_DEVICES="${DEVICE}" \
     ${IMAGE_TAG} \
     "$@" || exit $?

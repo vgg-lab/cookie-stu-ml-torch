@@ -4,3 +4,4 @@
 set -eu -o pipefail
 
 IMAGE_TAG="${IMAGE_TAG:-"{{cookiecutter.project_name}}"}"
+PROJECT_NAME="{{cookiecutter.project_name}}"
