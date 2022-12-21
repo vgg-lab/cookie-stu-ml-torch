@@ -15,4 +15,5 @@ WORKDIR /setup
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-WORKDIR /workspace
+WORKDIR /workspace/{{cookiecutter.project_name}}
+
